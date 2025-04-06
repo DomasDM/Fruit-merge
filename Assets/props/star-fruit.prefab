@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2643466199240018514}
   - component: {fileID: 7689391244606094301}
   - component: {fileID: 1592764707666205979}
+  - component: {fileID: -3582738856571979578}
   m_Layer: 0
   m_Name: star-fruit
   m_TagString: Untagged
@@ -101,7 +102,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -267,3 +268,15 @@ PolygonCollider2D:
       - {x: -0.53499997, y: -3.0449998}
       - {x: -0.33499998, y: -3.0049999}
   m_UseDelaunayMesh: 0
+--- !u!114 &-3582738856571979578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7835023439301539577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f680d7c8061f2a44c9f22bf3ea24bab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
