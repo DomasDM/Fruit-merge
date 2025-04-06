@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 242633232}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 464962945}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,6 +514,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d196a6d61605fdc42a1006a002d45966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit:
+  - {fileID: 7888183991021059047, guid: a3b1fed2a5f627642a0e392e32afb740, type: 3}
+  - {fileID: 4039291162341091053, guid: 06121c76d90a818458b108094400ccb8, type: 3}
+  - {fileID: 7706914958926274610, guid: 8e45a72912aed7c4185c07bfb6dbe666, type: 3}
+  - {fileID: 5343013376957709247, guid: 2fd58591e0faa784a92eabbfce6f97b2, type: 3}
+  - {fileID: 5941303178013632938, guid: 4fe49bbc24de9f4468959b0ee86a216f, type: 3}
+  - {fileID: 2562586605142558033, guid: 7e46c6e5bfde5384780701fc2c3be4b3, type: 3}
 --- !u!50 &1195063187
 Rigidbody2D:
   serializedVersion: 4
@@ -581,7 +588,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 8ddde5c07f300f9469a9c23a8b71141b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -621,7 +628,7 @@ GameObject:
   - component: {fileID: 1943507000}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
