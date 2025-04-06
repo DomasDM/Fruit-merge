@@ -7,6 +7,9 @@ public class cloundcont : MonoBehaviour
     public Transform[] fruit;
     static public string spawnedYet = "n";
     static public Vector2 cloudxPos;
+    static public Vector2 spawnPos;
+    static public string newfruit = "n";
+    static public int whichFruit = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +21,7 @@ public class cloundcont : MonoBehaviour
     void Update()
     {
         spawnFruit();
+        replaceFruit();
         if (Input.GetKey("a"))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-2, 0);
@@ -42,6 +46,14 @@ public class cloundcont : MonoBehaviour
             StartCoroutine(spawntimer());
 
             spawnedYet = "y";
+        }
+    }
+    void replaceFruit()
+    {
+        if (newfruit == "y")
+        {
+            newfruit = "n";
+            Instantiate(fruit[whichFruit + 1], spawnPos, fruit[0].rotation);
         }
     }
     IEnumerator spawntimer()
