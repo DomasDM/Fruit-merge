@@ -36,16 +36,35 @@ public class cloundcont : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         }
 
+        if ((Input.GetKeyDown("space")) && (spawnedYet == "y"))
+        {
+            spawnedYet = "n";
+        }
+
+
+        if ((GetComponent<Rigidbody2D>().velocity.x<0) && (transform.position.x<-3))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
+
+        if ((GetComponent<Rigidbody2D>().velocity.x > 0) && (transform.position.x >3))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
+
         cloudxPos = transform.position;
     }
 
-    void spawnFruit()
+   
+
+
+void spawnFruit()
     { 
         if (spawnedYet=="n")
         {
             StartCoroutine(spawntimer());
 
-            spawnedYet = "y";
+            spawnedYet = "w";
         }
     }
     void replaceFruit()
@@ -60,5 +79,6 @@ public class cloundcont : MonoBehaviour
     {
         yield return new WaitForSeconds(.75f);
         Instantiate(fruit[Random.Range(0, 6)], transform.position, fruit[0].rotation);
+        spawnedYet = "y";
     }
 }
